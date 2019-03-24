@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="#ffffff"
+    >
+
+
+    <RelativeLayout 
+        android:id="@+id/info_title_layout"
+		android:layout_width="fill_parent" 
+		android:layout_height="40dip"
+		android:background="@drawable/top_color">
+		
+		<Button 
+		    android:id="@+id/button_all"
+			android:layout_width="80dp" 
+			android:layout_height="40dp"
+			android:background="@drawable/top_color" 
+			android:textColor="@color/black"
+			android:text="全部订单"
+			android:layout_centerVertical="true" 
+			android:layout_marginLeft="10dp">
+		</Button>
+ 
+		<Button 
+		    android:id="@+id/button_his"
+			android:layout_width="80dp" 
+			android:layout_height="40dp"
+			android:textColor="@color/black"
+			android:background="@drawable/top_color" 
+			android:text="历史订单"
+			android:layout_centerVertical="true" 
+			android:layout_marginLeft="230dp">
+		</Button>
+	</RelativeLayout>
+	
+	
+	
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+		    
+		 	<ListView android:id="@id/android:list" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:dividerHeight="0px"
+				android:layout_margin="0px" android:cacheColorHint="#00000000"
+				android:focusable="true" android:divider="@drawable/divider_horizontal_timeline"
+				android:fastScrollEnabled="true">
+			</ListView>
+	
+	</RelativeLayout>
+
+</LinearLayout>
+

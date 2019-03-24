@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"  >
+        
+	    <TextView
+	        android:id="@+id/name"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+            android:layout_marginTop="8.0dp"
+	        android:textColor="#424952"
+	        android:textSize="16sp" 
+	        android:text=" 11111">
+	    </TextView>
+	    
+	     <TextView
+	        android:id="@+id/price"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" 
+	        android:layout_alignParentRight="true"
+			android:layout_marginRight="8dp"
+            android:layout_marginTop="11.0dp"
+	        android:textColor="#424952"
+	        android:textSize="16sp" 
+	        android:text=" 123456 ">
+	    </TextView>
+
+	     <TextView
+	         android:id="@+id/count"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_alignBaseline="@+id/price"
+	         android:layout_alignBottom="@+id/price"
+	         android:layout_marginRight="21dp"
+	         android:layout_toLeftOf="@+id/price"
+	         android:text=" 123456 "
+	         android:textColor="#424952"
+	         android:textSize="16sp" />
+	    
+    </RelativeLayout>
+    
+</LinearLayout>
